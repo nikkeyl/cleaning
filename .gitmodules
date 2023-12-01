@@ -1,0 +1,12 @@
+[submodule "src/components/rrc"]
+	path = src/components/rrc
+	url = https://github.com/nikkeyl/RRC.git
+[submodule "src/components/rrf"]
+	path = src/components/rrf
+	url = https://github.com/nikkeyl/RRF.git
+[submodule "src/components/rrs"]
+	path = src/components/rrs
+	url = https://github.com/nikkeyl/RRS.git
+[submodule "src/components/docs"]
+	path = src/components/docs
+	url = https://github.com/nikkeyl/docs.git

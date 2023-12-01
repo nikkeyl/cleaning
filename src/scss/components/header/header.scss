@@ -1,0 +1,53 @@
+/* HEADER */
+@import "./menu";
+@import "./icon-menu";
+
+.header {
+    @include adaptive-value("padding-top", 26, 10);
+    @include adaptive-value("padding-bottom", 26, 10);
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    width: 100%;
+    background-color: $color-light;
+
+    // .header__container
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(20);
+    }
+
+    // .header__logo
+    &__logo {
+    }
+
+    // .header__menu
+    &__menu {
+    }
+
+    // .header__actions,
+    &__logo,
+    &__actions {
+        position: relative;
+        z-index: 6;
+    }
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+
+    // .actions__item-action
+    &__item-action {
+    }
+
+    &__icon {
+        flex: 0 0 rem(30);
+    }
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/imports/head.htm',{
+    "title":"Cleaning Services"
+    })
+    <!-- BODY -->
+    <body class="page">
+        <!-- WRAPPER -->
+        <div class="wrapper">
+            <!-- HEADER -->
+            @@include('html/components/header.htm',{})
+            <!-- CONTENT -->
+            <main class="content">
+                <section class="home content__home">
+                    <div class="home__container">
+                        <div class="home__body">
+                            <div class="home__main">
+                                <h1 class="home__title">Cleaning Service
+                                    From World Class
+                                    Agency.
+                                </h1>
+                                <div class="home__text">
+                                    <p>Our services go beyond the basic services and provide you with clean your home and enhance your life.</p>
+                                </div>
+                                <button type="button" class="button home__button">learn more</button>
+                            </div>
+                            <div class="home__achivements">
+                                @@include('html/modules/complete.htm',{
+                                "class":" home__complete",
+                                "text":"Project Done",
+                                "value":"345"
+                                })
+                                @@include('html/modules/complete.htm',{
+                                "class":" home__complete",
+                                "text":"Satisfied Clients",
+                                "value":"1450+"
+                                })
+                                @@include('html/modules/complete.htm',{
+                                "class":" home__complete",
+                                "text":"Awards Winner",
+                                "value":"100+"
+                                })
+                                @@include('html/modules/complete.htm',{
+                                "class":" home__complete",
+                                "text":"Team Members",
+                                "value":"40+"
+                                })
+                            </div>
+                        </div>
+                        <div class="home__other">
+                            <img src="@content/svg/decor.svg" class="home__decor" alt="Decor">
+                            <img src="@content/img/home/wuman.png" class="home__image" alt="Wuman">
+                            <div class="team home__team">
+                                <div class="team__icon">
+                                    <svg>
+                                        <use href="@content/icons/sprite.svg#users"></use>
+                                    </svg>
+                                </div>
+                                <div class="team__title">Our Creative Team</div>
+                                <div class="team__users">
+                                    <div class="team__user team__user--green">
+                                        <a href="#" class="team__image-ibg team__image-ibg--contain">
+                                            <img data-src="@content/img/home/users/user01.png" alt="User">
+                                        </a>
+                                    </div>
+                                    <div class="team__user team__user--orange">
+                                        <a href="#" class="team__image-ibg team__image-ibg--contain">
+                                            <img data-src="@content/img/home/users/user02.png" alt="User">
+                                        </a>
+                                    </div>
+                                    <div class="team__user team__user--yellow">
+                                        <a href="#" class="team__image-ibg team__image-ibg--contain">
+                                            <img data-src="@content/img/home/users/user03.png" alt="User">
+                                        </a>
+                                    </div>
+                                    <div class="team__user team__user--gray">
+                                        <div class="team__value">
+                                            3+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="choose content__choose">
+                    <div class="choose__container">
+                        <div class="choose__body">
+                            @@include('components/rrc/components/title/title.htm',{
+                            "class":" choose__title",
+                            "modOne":" title__label--left",
+                            "modTwo":" title__main--left",
+                            "label":"About Us",
+                            "title":"Why will you choose our Services?",
+                            "tag":"h2"
+                            })
+                            <div class="text choose__text">
+                                <p class="choose__text-block">Our services go beyond the <b>basic services</b> and provide you with a clean the that will <a href="#">Cleaning services</a> of the reenergize your home and enhance your life.</p>
+                                <p class="choose__text-block">Our services go beyond the basic services and provide you with reenergize your home and enhance your life.</p>
+                            </div>
+                            <button type="button" class="button choose__button">read more</button>
+                        </div>
+                        <div class="choose__images">
+                            <div class="choose__image-ibg choose__image-ibg--contain choose__image-ibg--1">
+                                <img data-src="@content/img/choose/wuman01.png" alt="Wuman">
+                            </div>
+                            <div class="choose__image-ibg choose__image-ibg--contain choose__image-ibg--2">
+                                <img data-src="@content/img/choose/wuman02.jpg" alt="Wuman">
+                            </div>
+                            <img data-src="@content/svg/decor.svg" class="choose__decor" alt="Decor">
+                        </div>
+                    </div>
+                </section>
+                <section class="services content__services">
+                    <div class="services__container">
+                        <div class="services__head">
+                            @@include('components/rrc/components/title/title.htm',{
+                            "class":" services__title",
+                            "modOne":"",
+                            "modTwo":"",
+                            "label":"Service",
+                            "title":"Our Best Services",
+                            "tag":"h2"
+                            })
+                            <div class="text services__sub-title">
+                                <p>Our services go beyond the basic services and provide you with reenergize your home and enhance your life.</p>
+                            </div>
+                        </div>
+                        <div class="services__cards">
+                            @@include('html/modules/service.htm',{
+                            "class":" services__card",
+                            "title":"Hospital Cleaning",
+                            "mod":" service--yellow"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" services__card",
+                            "title":"office Cleaning",
+                            "mod":" service--green"
+                            })
+                            @@include('html/modules/service.htm',{
+                            "class":" services__card",
+                            "title":"home Cleaning",
+                            "mod":" service--orange"
+                            })
+                        </div>
+                        <a class="button services__button" href="#">All Service</a>
+                    </div>
+                </section>
+                <section class="proccess content__proccess">
+                    <img class="proccess__decor" data-src="@content/svg/decor.svg" alt="">
+                    <div class="proccess__container">
+                        <div class="proccess__head">
+                            @@include('components/rrc/components/title/title.htm',{
+                            "class":" proccess__title",
+                            "modOne":" title__label--left",
+                            "modTwo":" title__main--left",
+                            "label":"How we work",
+                            "title":"Our Cleaning Company Work Process for You",
+                            "tag":"h2"
+                            })
+                            <div class="text proccess__text">
+                                <p>Our services go beyond the basic services and provide you with reenergize your in a home and enhance your life.</p>
+                            </div>
+                        </div>
+                        <div class="proccess__cards">
+                            @@include('html/modules/step.htm',{
+                            "class":" proccess__card",
+                            "mod":" step-card--orange",
+                            "title":"Enjoy Cleaning"
+                            })
+                            @@include('html/modules/step.htm',{
+                            "class":" proccess__card",
+                            "mod":" step-card--blue",
+                            "title":"Clean and Fresh"
+                            })
+                            @@include('html/modules/step.htm',{
+                            "class":" proccess__card",
+                            "mod":" step-card--yellow",
+                            "title":"Enjoy Cleanness"
+                            })
+                            @@include('html/modules/step.htm',{
+                            "class":" proccess__card",
+                            "mod":" step-card--green",
+                            "title":"Clean and Fresh"
+                            })
+                        </div>
+                    </div>
+                </section>
+                <section class="answers content__answers">
+                    <div class="answers__container">
+                        @@include('components/rrc/components/title/title.htm',{
+                        "class":" answers__title",
+                        "modOne":"",
+                        "modTwo":"",
+                        "label":"FAQ",
+                        "title":"Question & Answer",
+                        "tag":"h2"
+                        })
+                        <div class="answers__columns">
+                            <div class="answers__spollers">
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                            </div>
+                            <div class="answers__spollers">
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                                @@include('html/modules/spoller.htm',{
+                                "class":" answers__spoller"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="clients content__clients">
+                    <div class="clients__container">
+                        @@include('components/rrc/components/title/title.htm',{
+                        "class":" clients__title",
+                        "modOne":"",
+                        "modTwo":"",
+                        "label":"FAQ",
+                        "title":"Our Clients Say",
+                        "tag":"h2"
+                        })
+                        <div class="swiper clients__slider">
+                            <div class="swiper-wrapper clients__wrapper">
+                                <div class="swiper-slide clients__slide">
+                                    <div class="review">
+                                        <div class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                        <div class="review__title">They are simple great</div>
+                                        <div class="review__text">
+                                            <p>
+                                                There are many variations majori have dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem that Ipsum isn't most a important anything embarrassing. There are many variations majori have 
+                                                dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem
+                                                that
+                                                Ipsum isn't most a important anything
+                                                embarrassing.
+                                            </p>
+                                        </div>
+                                        <div class="review__label">They are simple freat</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clients__slide">
+                                    <div class="review">
+                                        <div class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                        <div class="review__title">They are simple great</div>
+                                        <div class="review__text">
+                                            <p>
+                                                There are many variations majori have dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem that Ipsum isn't most a important anything embarrassing. There are many variations majori have 
+                                                dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem
+                                                that
+                                                Ipsum isn't most a important anything
+                                                embarrassing.
+                                            </p>
+                                        </div>
+                                        <div class="review__label">They are simple freat</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide clients__slide">
+                                    <div class="review">
+                                        <div class="review__image-ibg">
+                                            <img data-src="@content/img/clients/client01.jpg" alt="Client">
+                                        </div>
+                                        <div class="review__title">They are simple great</div>
+                                        <div class="review__text">
+                                            <p>
+                                                There are many variations majori have dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem that Ipsum isn't most a important anything embarrassing. There are many variations majori have 
+                                                dum suffered alteration in that of a some form by injected dumm more a randomised the slightly believable. If you are believable. If you are passage of Lorem
+                                                that
+                                                Ipsum isn't most a important anything
+                                                embarrassing.
+                                            </p>
+                                        </div>
+                                        <div class="review__label">They are simple freat</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            @@include('html/components/footer.htm',{})
+        </div>
+        <!-- SCRIPTS -->
+        @@include('html/imports/js.htm',{})
+    </body>
+</html>

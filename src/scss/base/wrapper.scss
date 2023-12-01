@@ -1,0 +1,21 @@
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+
+    > .content {
+        flex: 1 1 auto;
+    }
+
+    @supports (overflow: clip) {
+        overflow: clip;
+    }
+
+    @if $slider-fix == 1 {
+        > * {
+            min-width: 0;
+        }
+    }
+}
